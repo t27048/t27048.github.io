@@ -161,7 +161,15 @@ text-align: center;box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgb
   height: 2px;
   background-color: currentColor;
 }
-
+.menu.icon i{
+  content: '';
+  position: absolute;
+  top: -7px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background-color: #00000001;
+}
 
 
 
@@ -247,7 +255,7 @@ function lgout(){location.href='./login.html'+ '?AAAAAAAAAAAAAAAAAAAAAA' ;window
 	</div>
 	<br>
 	<div style="position: fixed;right:5%;top:18px;">
-		<div style="margin-left: 0px" ><div onclick="document.getElementById('lgmn').classList.toggle('show');" class="menu icon">&nbsp;</div></i>
+		<div style="margin-left: 0px" ><div onclick="document.getElementById('lgmn').classList.toggle('show');" class="menu icon"><i></i></div></i>
 		</div>
 	</div>
 	<div class="dropdown-content" style="position: fixed;right:2px;top:70px;z-index: -99990;" id="lgmn">
