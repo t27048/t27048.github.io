@@ -216,6 +216,7 @@ text-align: center;box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgb
 					if(usrid2=="9"){document.getElementById("topTitle").innerHTML="阮粤华";}
 					if(usrid2=="A"){document.getElementById("topTitle").innerHTML="罗炫林";}
 					if(usrid2=="B"){document.getElementById("topTitle").innerHTML="曾韦睿";}
+					localStorage.setItem("ID","usrid2");
 					document.getElementById("memb1").innerHTML="重点关注宿舍名单：<br>一楼：<br>04\x2009\x2015<br>二楼:<br>04\x2008\x2010\x2012<br>15\x2018<br>三楼：<br>07\x2010\x2011\x2018<br>四楼：\x20<br>01\x2005\x2006\<br><br><font\x20size=\x272\x27>------</font>";
 				   document.getElementById("lgmn").innerHTML+="<a href='#' onclick='lgout()'>退出登录</a>";
 				   }
@@ -249,7 +250,7 @@ window.onclick = function(e) {
 function lgout(){location.href='./login.html'+ '?AAAAAAAAAAAAAAAAAAAAAA' ;window.name = 'reloaded';}
 
 </script>
-<body oncontextmenu="return false;" onselectstart="return false"  style="bg; color: #FFFFFF; background-image: linear-gradient(to right , #F3F3F3, #ffffFF);"onLoad="cof();">
+<body oncontextmenu="return false;" onselectstart="return false" onload="var id=localStorage.getItem('ID');if(id.length>0){if(window.location.search.length<5){location.href='./login.html'+ '?random=' + Date.now();window.name = 'reloaded';}else{localStorage.setItem('ID',window.location.search.slice(1,2))}}" style="bg; color: #FFFFFF; background-image: linear-gradient(to right , #F3F3F3, #ffffFF);"onLoad="cof();">
 <div class="toptext" >
 	<div style="position: fixed;left:30px;top:15px;width: 50%;" >韶关市第一中学 一栋宿风部（六组）
 	</div>
