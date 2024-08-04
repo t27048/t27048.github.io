@@ -2,7 +2,7 @@
 	<head>
 			
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<title></title>
+	<title>主页 | Homepage</title>
 
 
 
@@ -62,6 +62,7 @@
 			text-align: left;
 			color:#212121;
 				font-size:20pt;
+			margin-top: 0px;
 			margin-left:20%;
 			margin-right:20%;
 		}.bottom-element {
@@ -204,7 +205,7 @@ text-align: center;box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgb
 					var usrid = Number(window.location.search.slice(1,2))-1;
 					var usrid2 = window.location.search.slice(1,2);
 					console.log(String(usrid));
-					function ZZ(){document.getElementById("BT").innerHTML+="<input type='button' value='微会议确认码验证' onclick='cf()' class='stickyButton button1'  style='margin-left: 0px'  />";}
+					function ZZ(){document.getElementById("lgmn").innerHTML+="<a href='#' onclick='cf()'>验证微会议码</a>"}
 					if(usrid2=="1"){document.getElementById("topTitle").innerHTML="吴铭乐";ZZ();}
 					if(usrid2=="2"){document.getElementById("topTitle").innerHTML="邝锦逵";}
 					if(usrid2=="3"){document.getElementById("topTitle").innerHTML="张振皓";}
@@ -217,7 +218,7 @@ text-align: center;box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgb
 					if(usrid2=="A"){document.getElementById("topTitle").innerHTML="罗炫林";}
 					if(usrid2=="B"){document.getElementById("topTitle").innerHTML="曾韦睿";}
 					localStorage.setItem("ID","usrid2");
-					document.getElementById("memb1").innerHTML="重点关注宿舍名单：<br>一楼：<br>04\x2009\x2015<br>二楼:<br>04\x2008\x2010\x2012<br>15\x2018<br>三楼：<br>07\x2010\x2011\x2018<br>四楼：\x20<br>01\x2005\x2006\<br><br><font\x20size=\x272\x27>------</font>";
+					
 				   document.getElementById("lgmn").innerHTML+="<a href='#' onclick='lgout()'>退出登录</a>";
 				   }
 
@@ -226,10 +227,6 @@ text-align: center;box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgb
 		var _0x272650=_0x33b9;(function(_0x53043f,_0x50670f){var _0x4005f1=_0x33b9,_0x519577=_0x53043f();while(!![]){try{var _0x53000b=-parseInt(_0x4005f1(0xff))/0x1*(-parseInt(_0x4005f1(0x104))/0x2)+-parseInt(_0x4005f1(0xfc))/0x3+-parseInt(_0x4005f1(0x107))/0x4*(parseInt(_0x4005f1(0x102))/0x5)+parseInt(_0x4005f1(0xfb))/0x6+parseInt(_0x4005f1(0x109))/0x7*(parseInt(_0x4005f1(0xfd))/0x8)+-parseInt(_0x4005f1(0x106))/0x9*(parseInt(_0x4005f1(0x101))/0xa)+-parseInt(_0x4005f1(0x108))/0xb;if(_0x53000b===_0x50670f)break;else _0x519577['push'](_0x519577['shift']());}catch(_0x44a815){_0x519577['push'](_0x519577['shift']());}}}(_0xe499,0x59a8b),console[_0x272650(0x105)](Date['now']()));var pw=window[_0x272650(0x103)][_0x272650(0x100)];console[_0x272650(0x105)](pw),console[_0x272650(0x105)](pw['slice'](0x2)),pw=pw[_0x272650(0xfe)](0x2),console[_0x272650(0x105)](pw);var a=0x0;console[_0x272650(0x105)](pw-0x2f0e24fb);function _0x33b9(_0x1ad7a8,_0x5c7532){var _0xe4992d=_0xe499();return _0x33b9=function(_0x33b9f4,_0x859dd){_0x33b9f4=_0x33b9f4-0xfa;var _0x5a1407=_0xe4992d[_0x33b9f4];return _0x5a1407;},_0x33b9(_0x1ad7a8,_0x5c7532);}isInteger(pw-0x2f0e24fb)&&(a+=0x1);function _0xe499(){var _0x43813d=['295ReEheZ','location','1054822JneMJV','log','103032BQiWmt','8860QIgApo','3922039qkeYMY','4384233XlooAQ','now','2739900DtZleR','1958613crKeuG','8vTzcya','slice','1xrMwPq','search','90WvjCCk'];_0xe499=function(){return _0x43813d;};return _0xe499();};console['log'](isInteger(pw-0x2f0e24fb));pw-0x2f0e24fb<=Date[_0x272650(0xfa)]()+0x493e0&&(a+=0x1);;console['log'](pw-0x2f0e24fb<=Date[_0x272650(0xfa)]()+0x493e0);pw-0x2f0e24fb>=Date[_0x272650(0xfa)]()-0x493e0&&(a+=0x1);;console[_0x272650(0x105)](pw-0x2f0e24fb>=Date[_0x272650(0xfa)]()-0x493e0),console[_0x272650(0x105)](a);
 		if(a==3){console.log(a);memb();}
 		else{if(window.location.search!=""){location.href='./login.html'+ '?random=' + Date.now();window.name = 'reloaded';}}
-		if(window.location.search!="")
-		{
-			document.getElementById("BT").innerHTML += "<input type='button' value='惊喜按钮 1号' onclick='JX1();' class='stickyButton button1' style='margin-left: 0px'  /><input type='button' value='惊喜按钮 2号' onclick='JX2();' class='stickyButton button1' style='margin-left: 0px'  />"
-		}
 	}
 			
 		
@@ -261,6 +258,15 @@ function cl(){
 		}
 	}
 }
+	
+function mb1(){
+	if(document.getElementById("memb1").innerHTML.length<2){
+	   document.getElementById("memb1").innerHTML="重点关注宿舍名单：<br>一楼：<br>04\x2009\x2015<br>二楼:<br>04\x2008\x2010\x2012<br>15\x2018<br>三楼：<br>07\x2010\x2011\x2018<br>四楼：\x20<br>01\x2005\x2006\<br><br><font\x20size=\x272\x27>------</font>";
+	   }
+	else{
+	   document.getElementById("memb1").innerHTML="";
+	   }
+}
 </script>
 <body oncontextmenu="return false;" onselectstart="return false" style="bg; color: #FFFFFF; background-image: linear-gradient(to right , #F3F3F3, #ffffFF);"onLoad="cof();cl();">
 <div class="toptext" >
@@ -283,13 +289,135 @@ function cl(){
 <div class="toptext1">公告：本网站将迁移到 sgyz.us.kg </div>
 	<p style="height:90px">&nbsp;</p>
 <p id="BT" style="text-align: center">					  
+<style>
+.card1 {
+box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+transition: 0.3s;margin: 10px auto;
+border-radius:10px;
+width:220px;
+height:110px;
+background-image:linear-gradient(120deg,#D53500ee,#FF7000ee);
+backdrop-filter: blur(50px);
+backdrop-filter: brightness(120%);
+	position: relative;
+	left: -112px;
+}
 
-<input type="button" value="微会议 202403A" onclick="location.href='./meeting/202403A.htm'+ '?random=' + Date.now();window.name = 'reloaded';"class="stickyButton button1"  style="margin-left: 0px"  />
-<input type="button" value="微会议 202403B" onclick="location.href='./meeting/202403B.htm'+ '?random=' + Date.now();window.name = 'reloaded';"class="stickyButton button1"  style="margin-left: 0px"  />
-<input type="button" value="微会议 202404A" onclick="location.href='./meeting/202404A.htm'+ '?random=' + Date.now();window.name = 'reloaded';"class="stickyButton button1"  style="margin-left: 0px"  />
-<input type="button" value="微会议 202405A" onclick="location.href='./meeting/202405A.htm'+ '?random=' + Date.now();window.name = 'reloaded';"class="stickyButton button1"  style="margin-left: 0px"  />
+.card1:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+	border-radius:5px;
+}
+.card2 {
+box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+transition: 0.3s;margin: 10px auto;
+border-radius:10px;
+width:220px;
+height:110px;
+background-image:linear-gradient(120deg,#A36E0Cee,#C08704ee);
+backdrop-filter: blur(50px);
+backdrop-filter: brightness(120%);
+	position: relative;
+	left: 112px;
+	top: -120px;
+}
+
+.card2:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+	border-radius:5px;
+}
+	
+.card3 {
+box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+transition: 0.3s;margin: 10px auto;
+border-radius:10px;
+width:220px;
+height:110px;
+background-image:linear-gradient(120deg,#1D255Eee,#333083ee);
+backdrop-filter: blur(50px);
+backdrop-filter: brightness(120%);
+position: relative;
+	left: -112px;
+	top:-120px;
+}
+
+.card3:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+	border-radius:5px;
+}
+.card4 {
+box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+transition: 0.3s;margin: 10px auto;
+border-radius:10px;
+width:220px;
+height:110px;
+background-image:linear-gradient(120deg,#622D1Cee,#883E1Bee);
+backdrop-filter: blur(50px);
+backdrop-filter: brightness(120%);
+position: relative;
+	left: 112px;
+	top:-240px;
+}
+
+.card4:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+	border-radius:5px;
+}
+.card5 {
+box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+transition: 0.3s;margin: 10px auto;
+border-radius:10px;
+width:220px;
+height:110px;
+background-image:linear-gradient(120deg,#185C37ee,#33C481ee);
+backdrop-filter: blur(50px);
+backdrop-filter: brightness(120%);
+position: relative;
+	left: -112px;
+	top:-240px;
+}
+
+.card5:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+	border-radius:5px;
+}
+.card6 {
+box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+transition: 0.3s;margin: 10px auto;
+border-radius:10px;
+width:220px;
+height:110px;
+background-image:linear-gradient(120deg,#185C37ee,#33C481ee);
+backdrop-filter: blur(50px);
+backdrop-filter: brightness(120%);
+position: relative;
+	left: -112px;
+	top:240px;
+}
+
+.card6:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+	border-radius:5px;
+}
+.container {
+  padding: 2px 16px;
+}
+.bd {
+  padding: 70px 70px 0px;
+	
+}
+</style>
+	<div class="bd">
+		<div class="card1" onclick="location.href='./meeting/index.html'"><font size="+7" style="margin-left:10px; margin-top:50px;">微·会议</font><br><font size="+2" style="margin-left: 10px;">录播会议视频</font></div>
+		<div class="card2" onclick='JX1();'><font size="+7" style="margin-left:10px; margin-top:50px;">惊喜按钮</font><br><font size="+1.5" style="margin-left: 10px;">按了会发生什么呢？(1号)</font></div>
+		<div class="card3" onclick="location.href='https://ys.mihoyo.com/'" ><font size="+7" style="margin-left:10px; margin-top:50px;">原神</font><br><font size="+1.5" style="margin-left: 10px;">一款开放世界冒险RPG</font></div>
+		<div class="card4" onclick='JX2();'><font size="+7" style="margin-left:10px; margin-top:50px;">惊喜按钮</font><br><font size="+1.5" style="margin-left: 10px;">按了会发生什么呢？(2号)</font></div>
+		<div class="card5" onclick='mb1()'><font size="+7" style="margin-left:10px; margin-top:50px;">关注名单</font><br><font size="+1.5" style="margin-left: 10px;">重点关注宿舍名单</font></div>
+</div>
+	<p class="auto-style5" id="memb1"></p>
+</div>
+
 </p>
-<p class="auto-style5" id="memb1"></p>
+
 	<p style="text-align: center"></p>
 
 </div>
