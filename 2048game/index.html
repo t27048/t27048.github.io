@@ -57,10 +57,9 @@
   <meta charset="utf-8">
   <script>
 	function aaa(){
-		var uri_encode=encodeURIComponent(window.location.search.slice(1,4));
-		var aaaaa=decodeURIComponent(uri_encode);
-		console.log(decodeURIComponent(uri_encode));
-		document.getElementById('playername').innerHTML="玩家 "+aaaaa;
+		
+		var aaaaa=decodeURIComponent(window.location.search);
+		document.getElementById('playername').innerHTML="玩家 "+aaaaa.slice(1,10000);
 		
 	}
 	function goBack(){
