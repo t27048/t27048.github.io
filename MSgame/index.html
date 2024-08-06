@@ -5,13 +5,13 @@
 	<title>web 扫雷游戏</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="mine.css"><script>
-		
+		  
 	function goBack(){
     	window.history.back()
 		}
 	</script>
 </head>
-<body>
+<body onLoad="aaaaaa=0">
 <input type="button" value="◄" onclick="goBack()"class="stickyButton button1" style="margin-left: 0px;"  />
 	<div class="container">
 		<header>
@@ -20,7 +20,7 @@
 		</header>
 		<div id="id-content">
 			<div class="square-line">
-				<div class="square" id="id-cell-0-0" ><span class="value"></span></div>
+				<div class="square" onouchstart="gtouchstart(id)" ontouchend="gtouchend()" ontouchmove="gtouchmove()" id="id-cell-0-0" ><span class="value"></span></div>
 				<div class="square" id="id-cell-0-1" ><span class="value"></span></div>
 				<div class="square" id="id-cell-0-2" ><span class="value"></span></div>
 				<div class="square" id="id-cell-0-3" ><span class="value"></span></div>

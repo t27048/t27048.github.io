@@ -133,6 +133,10 @@ var rightClicked = function(target) {
     }
     testWin()
 }
+var cq=function(){
+	if(aaaaaa=1){aaaaaa=0}
+	if(aaaaaa=0){aaaaaa=1}
+}
 
 var clicked = function(event) {
 	ticTok()
@@ -140,11 +144,9 @@ var clicked = function(event) {
 	if ( target.classList[0] == 'value') {
 		target = target.parentElement
 	}
-	if (event.button == 0) {
+	if (aaaaaa == 0) {
 		leftClicked(target)
-	} else if (event.button == 2) {
-		rightClicked(target)
-	}
+	} 
 }
 
 var clickedAll = function() {
@@ -271,8 +273,10 @@ var main = function(){
 	}
 	squareLeft = 144
 	num = 15
+	aaaaaa=0
 	bindAll('button', 'click', refresh)
 	bindAll('.square', 'mousedown', clicked)
+	bindAll('.cq', 'mousedown', cq)
 	refresh()
 }
 
