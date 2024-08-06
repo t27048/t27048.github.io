@@ -24,4 +24,4 @@ jobs:
           subject: 【一栋宿风部】${{ github.event.inputs.tt }}
           html_body: https://sgyz.us.kg/index.html
           to: AP27046@outlook.com
-          from: GitHub Actions
+          from: 一栋宿风部
