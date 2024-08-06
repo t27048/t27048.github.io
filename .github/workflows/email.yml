@@ -7,7 +7,10 @@ on:
         description: '标题'     
         required: true
         default: '无标题'
-
+      ttt:
+        description: '内容'     
+        required: true
+        default: ''
 
     
 jobs:
@@ -22,6 +25,6 @@ jobs:
           username: ${{ secrets.MAIL_USERNAME }}
           password: ${{ secrets.MAIL_PASSWORD }}
           subject: 【一栋宿风部】${{ github.event.inputs.tt }}
-          html_body: <a href="https://sgyz.us.kg">sgyz.us.kg</a>
+          html_body: ${{ github.event.inputs.tt }}<br>---<br><a href="https://sgyz.us.kg">sgyz.us.kg</a>
           to: AP27046@outlook.com
           from: 一栋宿风部
