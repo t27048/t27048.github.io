@@ -1,0 +1,27 @@
+
+
+on: 
+  workflow_dispatch:
+    inputs:
+      tt:
+        description: '标题'     
+        required: true
+        default: '无标题'
+
+
+    
+jobs:
+  bot:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 'Send mail'
+        uses: dawidd6/action-send-mail@master
+        with:
+          server_address: smtp.163.com
+          server_port: 465
+          username: ${{ secrets.MAIL_USERNAME }}
+          password: ${{ secrets.MAIL_PASSWORD }}
+          subject: 【一栋宿风部】${{ github.event.inputs.tt }}
+          html_body: https://sgyz.us.kg/index.html
+          to: AP27046@outlook.com
+          from: GitHub Actions
