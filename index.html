@@ -193,6 +193,8 @@ text-align: center;box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgb
 		function JX3(){location.href='./MSgame/index.html'+ '?'+ document.getElementById("topTitle").innerHTML;window.name = 'reloaded';}
 		function cf(){location.href='./meeting/cofcode.htm'+ '?random=' + Date.now();window.name = 'reloaded';}
 		function md(){location.href='./list.xlsx'+ '?random=' + Date.now();window.name = 'reloaded';}
+		function PEP(){location.href='https://jccs.mypep.com.cn/';window.name = 'reloaded';}
+		function EDU(){location.href='https://basic.smartedu.cn/';window.name = 'reloaded';}
 	function memb(){console.log("c0");
 					var now = new Date();
 					var nowTime = now.getTime();
@@ -400,6 +402,42 @@ position: relative;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 	border-radius:5px;
 }
+.card7 {
+box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+transition: 0.3s;margin: 10px auto;
+border-radius:10px;
+width:220px;
+height:110px;
+background-image:linear-gradient(120deg,#009859,#009859);
+backdrop-filter: blur(50px);
+backdrop-filter: brightness(120%);
+position: relative;
+	left: -224px;
+	top:-480px;
+}
+
+.card7:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+	border-radius:5px;
+}
+.card8 {
+box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+transition: 0.3s;margin: 10px auto;
+border-radius:10px;
+width:440px;
+height:110px;
+background-image:linear-gradient(120deg,#1E62EC,#1E62EC);
+backdrop-filter: blur(50px);
+backdrop-filter: brightness(120%);
+position: relative;
+	left: 118px;
+	top:-600px;
+}
+
+.card8:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+	border-radius:5px;
+}
 .container {
   padding: 2px 16px;
 }
@@ -413,7 +451,10 @@ position: relative;
 		<div class="card2" onclick='JX1();'><font size="+7" style="margin-left:10px; margin-top:50px;">惊喜按钮</font><br><font size="+1.5" style="margin-left: 10px;">按了会发生什么呢？(1号)</font></div>
 		<div class="card3" onclick="location.href='https://ys.mihoyo.com/'" ><font size="+7" style="margin-left:10px; margin-top:50px;">原神</font><br><font size="+1.5" style="margin-left: 10px;">一款开放世界冒险RPG</font></div>
 		<div class="card4" onclick='JX2();'><font size="+7" style="margin-left:10px; margin-top:50px;">惊喜按钮</font><br><font size="+1.5" style="margin-left: 10px;">按了会发生什么呢？(2号)</font></div>
-		<div class="card5" onclick='mb1()'><font size="+3" style="margin-left:30px; margin-top:100px;">&nbsp;</font><br><font size="+7" style="margin-left:30px; margin-top:100px;">重关名单</font><br><font size="+3" style="margin-left:30px; margin-top:100px;">一些数字和汉字的组合</font></div><div class="card6" onclick='JX3();'><font size="+7" style="margin-left:10px; margin-top:50px;">惊喜按钮</font><br><font size="+1.5" style="margin-left: 10px;">按了会发生什么呢？(3号)</font></div>
+		<div class="card5" onclick='mb1()'><font size="+3" style="margin-left:30px; margin-top:100px;">&nbsp;</font><br><font size="+7" style="margin-left:30px; margin-top:100px;">重关名单</font><br><font size="+3" style="margin-left:30px; margin-top:100px;">一些数字和汉字的组合</font></div>
+		<div class="card6" onclick='JX3();'><font size="+7" style="margin-left:10px; margin-top:50px;">惊喜按钮</font><br><font size="+1.5" style="margin-left: 10px;">按了会发生什么呢？(3号)</font></div>
+		<div class="card7" onclick='PEP();'><font size="+7" style="margin-left:10px; margin-top:50px;">电子教材</font><br><font size="+1.5" style="margin-left: 10px;">人教版中小学教材(外链)</font></div>
+		<div class="card8" onclick='EDU();'><font size="+7" style="margin-left:10px; margin-top:50px;">国家中小学</font><br><font size="+1.5" style="margin-left: 10px;">国家中小学智慧教育平台(外链)</font></div>
 </div>
 	<p class="auto-style5" id="memb1"></p>
 </div>
