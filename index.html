@@ -192,6 +192,7 @@ text-align: center;box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgb
 		function JX2(){location.href='./xiangqigame/index.html'+ '?'+ document.getElementById("topTitle").innerHTML;window.name = 'reloaded';}
 		function JX3(){location.href='./MSgame/index.html'+ '?'+ document.getElementById("topTitle").innerHTML;window.name = 'reloaded';}
 		function cf(){location.href='./meeting/cofcode.htm'+ '?random=' + Date.now();window.name = 'reloaded';}
+		function md(){location.href='./list.xls'+ '?random=' + Date.now();window.name = 'reloaded';}
 	function memb(){console.log("c0");
 					var now = new Date();
 					var nowTime = now.getTime();
@@ -207,17 +208,17 @@ text-align: center;box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgb
 					var usrid2 = window.location.search.slice(1,2);
 					console.log(String(usrid));
 					function ZZ(){document.getElementById("lgmn").innerHTML+="<a href='#' onclick='cf()'>验证微会议码</a>";}
-					if(usrid2=="1"){document.getElementById("topTitle").innerHTML="吴铭乐";ZZ();}
-					if(usrid2=="2"){document.getElementById("topTitle").innerHTML="邝锦逵";}
-					if(usrid2=="3"){document.getElementById("topTitle").innerHTML="张振皓";}
-					if(usrid2=="4"){document.getElementById("topTitle").innerHTML="邹志远";}
-					if(usrid2=="5"){document.getElementById("topTitle").innerHTML="朱浩然";}
-					if(usrid2=="6"){document.getElementById("topTitle").innerHTML="陈宇坤";}
-					if(usrid2=="7"){document.getElementById("topTitle").innerHTML="杨杰铭";}
-					if(usrid2=="8"){document.getElementById("topTitle").innerHTML="廖家祥";}
-					if(usrid2=="9"){document.getElementById("topTitle").innerHTML="阮粤华";}
-					if(usrid2=="A"){document.getElementById("topTitle").innerHTML="罗炫林";}
-					if(usrid2=="B"){document.getElementById("topTitle").innerHTML="曾韦睿";}
+					if(usrid2=="1"){document.getElementById("topTitle").innerHTML="吴铭乐";document.getElementById("lgmn").innerHTML+="<a href='#' onclick='md()'>宿舍名单下载</a>";ZZ();}
+					if(usrid2=="2"){document.getElementById("topTitle").innerHTML="邝锦逵";document.getElementById("lgmn").innerHTML+="<a href='#' onclick='md()'>宿舍名单下载</a>";}
+					if(usrid2=="3"){document.getElementById("topTitle").innerHTML="张振皓";document.getElementById("lgmn").innerHTML+="<a href='#' onclick='md()'>宿舍名单下载</a>";}
+					if(usrid2=="4"){document.getElementById("topTitle").innerHTML="邹志远";document.getElementById("lgmn").innerHTML+="<a href='#' onclick='md()'>宿舍名单下载</a>";}
+					if(usrid2=="5"){document.getElementById("topTitle").innerHTML="朱浩然";document.getElementById("lgmn").innerHTML+="<a href='#' onclick='md()'>宿舍名单下载</a>";}
+					if(usrid2=="6"){document.getElementById("topTitle").innerHTML="陈宇坤";document.getElementById("lgmn").innerHTML+="<a href='#' onclick='md()'>宿舍名单下载</a>";}
+					if(usrid2=="7"){document.getElementById("topTitle").innerHTML="杨杰铭";document.getElementById("lgmn").innerHTML+="<a href='#' onclick='md()'>宿舍名单下载</a>";}
+					if(usrid2=="8"){document.getElementById("topTitle").innerHTML="廖家祥";document.getElementById("lgmn").innerHTML+="<a href='#' onclick='md()'>宿舍名单下载</a>";}
+					if(usrid2=="9"){document.getElementById("topTitle").innerHTML="阮粤华";document.getElementById("lgmn").innerHTML+="<a href='#' onclick='md()'>宿舍名单下载</a>";}
+					if(usrid2=="A"){document.getElementById("topTitle").innerHTML="罗炫林";document.getElementById("lgmn").innerHTML+="<a href='#' onclick='md()'>宿舍名单下载</a>";}
+					if(usrid2=="B"){document.getElementById("topTitle").innerHTML="曾韦睿";document.getElementById("lgmn").innerHTML+="<a href='#' onclick='md()'>宿舍名单下载</a>";}
 					localStorage.setItem("ID","usrid2");
 					
 				   document.getElementById("lgmn").innerHTML+="<a href='#' onclick='lgout()'>退出登录</a>";
@@ -262,7 +263,7 @@ function cl(){
 	
 function mb1(){
 	if(document.getElementById("memb1").innerHTML.length<2){
-	   document.getElementById("memb1").innerHTML="重关名单（2024年9月）：<br>一楼：<br>13（一上）<br>二楼:<br>10（一上、一下、二上、三下）<br>三楼：<br>05(一上)09<br>四楼：<br>09、12（一上、三上）<br>五楼：<br>暂定<br><br><font\x20size=\x272\x27>---名单的编制是基于上学期学生扣分情况的全面梳理与综合考量而完成的。---</font>";
+	   document.getElementById("memb1").innerHTML="重关名单（2024年9月）：<br>一楼：<br>13（一上）<br>二楼:<br>10（一上、一下、二上、三下）<br>三楼：<br>05(一上)、09<br>四楼：<br>09、12（一上、三上）<br>五楼：<br>暂定<br><br><font\x20size=\x272\x27>---名单的编制是基于上学期学生扣分情况的全面梳理与综合考量而完成的。---</font>";
 	   }
 	else{
 	   document.getElementById("memb1").innerHTML="";
