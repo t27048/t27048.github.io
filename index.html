@@ -266,10 +266,10 @@ function cl(){
 	
 function mb1(){
 	if(document.getElementById("memb1").innerHTML.length<2){
-	   document.getElementById("memb1").innerHTML="重关名单（2024年9月）：<br>一楼：<br>13（一上）<br>二楼:<br>10（一上、一下、二上、三下）<br>三楼：<br>05(一上)、09<br>四楼：<br>09、12（一上、三上）<br>五楼：<br>暂定<br><br><font\x20size=\x272\x27>---名单的编制是基于上学期学生扣分情况的全面梳理与综合考量而完成的。---</font>";
+	   document.getElementById("memb1").innerHTML="重关名单（2024年9月）：<br>一楼：<br>13（一上）<br>二楼:<br>10（一上、一下、二上、三下）<br>三楼：<br>05(一上)、09<br>四楼：<br>09、12（一上、三上）<br>五楼：<br>暂定<br><br><font\x20size=\x272\x27>---名单的编制是基于上学期学生扣分情况的全面梳理与综合考量而完成的。---</font>";document.getElementById("zgmd").innerHTML="屏幕下滑即可获取名单";
 	   }
 	else{
-	   document.getElementById("memb1").innerHTML="";
+	   document.getElementById("memb1").innerHTML="";document.getElementById("zgmd").innerHTML="一些数字和汉字的组合";
 	   }
 }
 </script>
@@ -470,7 +470,7 @@ position: relative;
 		<div class="card2" onclick='JX1();'><font size="+7" style="margin-left:10px; margin-top:50px;">惊喜按钮</font><br><font size="+1.5" style="margin-left: 10px;">按了会发生什么呢？(1号)</font></div>
 		<div class="card3" onclick="location.href='https://ys.mihoyo.com/'" ><font size="+7" style="margin-left:10px; margin-top:50px;">原神</font><br><font size="+1.5" style="margin-left: 10px;">一款开放世界冒险RPG</font></div>
 		<div class="card4" onclick='JX2();'><font size="+7" style="margin-left:10px; margin-top:50px;">惊喜按钮</font><br><font size="+1.5" style="margin-left: 10px;">按了会发生什么呢？(2号)</font></div>
-		<div class="card5" onclick='mb1()'><font size="+3" style="margin-left:30px; margin-top:100px;">&nbsp;</font><br><font size="+7" style="margin-left:30px; margin-top:100px;">重关名单</font><br><font size="+3" style="margin-left:30px; margin-top:100px;">一些数字和汉字的组合</font></div>
+		<div class="card5" onclick='mb1()'><font size="+3" style="margin-left:30px; margin-top:100px;">&nbsp;</font><br><font size="+7" style="margin-left:30px; margin-top:100px;">重关名单</font><br><font size="+3" style="margin-left:30px; margin-top:100px;" id="zgmd">一些数字和汉字的组合</font></div>
 		<div class="card6" onclick='JX3();'><font size="+7" style="margin-left:10px; margin-top:50px;">惊喜按钮</font><br><font size="+1.5" style="margin-left: 10px;">按了会发生什么呢？(3号)</font></div>
 		<div class="card7" onclick='PEP();'><font size="+7" style="margin-left:10px; margin-top:50px;">电子教材</font><br><font size="+1.5" style="margin-left: 10px;">人教版中小学教材(外链)</font></div>
 		<div class="card8" onclick='EDU();'><font size="+7" style="margin-left:10px; margin-top:50px;">国家中小学</font><br><font size="+1.5" style="margin-left: 10px;">国家中小学智慧教育平台(外链)</font></div>
